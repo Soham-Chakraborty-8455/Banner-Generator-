@@ -42,11 +42,11 @@ class EventSchema(ma.SQLAlchemySchema):
 def hello_world():
     if request.method=='POST':
         Title=request.form['title']
-        AgencyName=request.form['agencyName']
-        Phone = request.form['phone']
-        Venue = request.form['venue']
-        Website = request.form['website']
-        Date = request.form['date']
+        AgencyName=request.form.get('agencyName')
+        Phone = request.form.get('phone')
+        Venue = request.form.get('venue')
+        Website = request.form.('website')
+        Date = request.form.get('date')
         query1= Todo(title=Title, agencyName= AgencyName, phone= Phone, venue= Venue, website= Website, date=Date)
         with app.app_context():
             db.session.add(query1)
