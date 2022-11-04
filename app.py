@@ -38,7 +38,7 @@ class EventSchema(ma.SQLAlchemySchema):
     date = ma.auto_field()
 
 
-@app.route('/api', methods=['GET', 'POST'])
+@app.route('/', methods=['GET','POST'])
 def hello_world():
     if request.method=='POST':
         Title=request.form['title']
@@ -52,6 +52,8 @@ def hello_world():
             db.session.add(query1)
             db.session.commit()
         return redirect(url_for('/api/dataofsqlalchemy'))
+    else:
+        return render_template("index.html",token="Hello World")
     
 
 @app.route('/api/dataofsqlalchemy')
