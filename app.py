@@ -41,12 +41,12 @@ class EventSchema(ma.SQLAlchemySchema):
 @app.route('/', methods=['GET','POST'])
 def hello_world():
     if request.method=='POST':
-        Title=request.form['title']
-        AgencyName=request.form.get('agencyName')
-        Phone = request.form.get('phone')
-        Venue = request.form.get('venue')
-        Website = request.form.get('website')
-        Date = request.form.get('date')
+        Title=request.json['title']
+        AgencyName=request.json['agencyName']
+        Phone = request.json['phone']
+        Venue = request.json['venue']
+        Website = request.json['website']
+        Date = request.json['date']
         query1= Todo(title=Title, agencyName= AgencyName, phone= Phone, venue= Venue, website= Website, date=Date)
         with app.app_context():
             db.session.add(query1)
