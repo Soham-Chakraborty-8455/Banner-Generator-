@@ -1,0 +1,15 @@
+.formLabel{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.inputArea{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.inputArea input{
+    margin-top: 8px;
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 10px;
+}

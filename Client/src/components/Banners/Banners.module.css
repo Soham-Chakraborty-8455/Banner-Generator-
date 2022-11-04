@@ -1,0 +1,129 @@
+.BannerArea{
+    background-color: black;
+    width:90%;
+    height: 330px;
+    margin: 40px auto;
+    position: relative;
+}
+.triangleRight {
+	width: 0;
+	height: 0;
+	border-top: 167px solid transparent;
+	border-left: 82px solid rgb(255, 203, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.logoArea{
+    position: absolute;
+    left: 140px;
+    top: 50px;
+}
+.logoIcon{
+    rotate: -25deg;
+    margin-right: 5px;
+    color: rgb(255, 203, 0);
+}
+.logo{
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+}
+.logo::after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -30px;
+    background-color: white;
+    color: white;
+    height: 3px;
+    border-radius: 20px;
+    width: 45px;
+}
+.eventTitle{
+    font-size: 4rem;
+    color: rgb(254, 206, 4);
+    position: absolute;
+    left: 168px;
+    font-weight: 700;
+    top: 120px;
+}
+.eventTitle div:last-child{
+    color: white;
+}
+.parallelogram, .parallelogram1 {
+    width: 30px;
+    height: 165px;
+    transform: skew(30deg);
+    background: rgb(255, 203, 0);
+    position: absolute;
+    right: 588px;
+}
+.parallelogram1{
+    right: 463px;
+    bottom: 0px;
+}
+.callArea, .website{
+    position: absolute;
+    left: 190px;
+    bottom: 40px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.website{
+    left: 390px;
+    bottom: 40px;
+}
+.call, .link{
+    background-color: rgb(255, 203, 0);
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phoneNumber,.websiteName{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.detailsArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top:50px;
+    margin-bottom: 40px;
+}
+.venueArea{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.venueLogo, .dateLogo{
+    color:rgb(254, 206, 4);
+    font-size: 2.3rem;
+}
+.venue, .date{
+    color:white;
+    font-size: 1.5rem;
+    height: 100px;
+    width:400px;
+    overflow: auto;
+    text-align: center;
+}
+.date{
+    height: auto;
+    width:auto;
+}
+.dateArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
