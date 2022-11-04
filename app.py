@@ -45,7 +45,7 @@ def hello_world():
         AgencyName=request.form.get('agencyName')
         Phone = request.form.get('phone')
         Venue = request.form.get('venue')
-        Website = request.form.('website')
+        Website = request.form.get('website')
         Date = request.form.get('date')
         query1= Todo(title=Title, agencyName= AgencyName, phone= Phone, venue= Venue, website= Website, date=Date)
         with app.app_context():
