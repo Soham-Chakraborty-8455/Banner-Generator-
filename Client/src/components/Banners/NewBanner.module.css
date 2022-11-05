@@ -1,0 +1,34 @@
+.form{
+    margin: 0 30%;
+    border: black solid 2px;
+    padding: 5%;
+    padding-top: 3%;
+    border-radius: 20px;
+    position: relative;
+}
+.closeButton{
+    color:red;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right:20px;
+    top:50px;
+}
+.closeButton svg{
+    font-size: 2.2rem;
+}
+.formTitle{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align:center;
+    color: #008080;
+}
+.button{
+    background-color: #008080;
+    color:white;
+    font-size: 1.3rem;
+    border: none;
+    padding: 4px;
+    border-radius: 10px;
+
+}
