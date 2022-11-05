@@ -5,7 +5,7 @@ const Input =React.forwardRef( (props,ref) =>  {
     return (
         <div className={classes.inputArea}>
             <label htmlFor={props.label.for} className={classes.formLabel}>{props.labelName}</label>
-            <input type={props.input.type} className={classes.formControl} id={props.input.id} placeholder={props.input.placeholder} ref={ref}/>
+            <input type={props.input.type} className={classes.formControl} id={props.input.id} value={props.input.value} placeholder={props.input.placeholder} ref={ref}/>
         </div>
     )
 })

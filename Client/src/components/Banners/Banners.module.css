@@ -16,7 +16,7 @@
 }
 .logoArea{
     position: absolute;
-    left: 140px;
+    left: 120px;
     top: 50px;
 }
 .logoIcon{
@@ -44,7 +44,7 @@
     font-size: 4rem;
     color: rgb(254, 206, 4);
     position: absolute;
-    left: 168px;
+    left: 148px;
     font-weight: 700;
     top: 120px;
 }
